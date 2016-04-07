@@ -19,7 +19,6 @@ public class RentNRideVehicleTrackerAssessment2 {
         //This is for git stuff
         
         String git;
-        git = "fuck you github";
     }
     
 }
