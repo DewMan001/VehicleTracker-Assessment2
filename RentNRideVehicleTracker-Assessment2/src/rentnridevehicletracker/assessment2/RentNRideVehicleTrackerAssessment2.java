@@ -18,7 +18,17 @@ public class RentNRideVehicleTrackerAssessment2 {
         // TODO code application logic here
         //This is for git stuff
         
-        String git;
+        Vehicle Car1 = new Vehicle();
+        
+        //setting up all of the variables
+        Car1.setManufacturer("Holden");
+        Car1.setModel("DEFEAT");
+        Car1.setServices(2);
+        Car1.setMakeYear(2015);
+        Car1.setKM(0.05);
+        
+        //printing out the vehicle details
+        Car1.printVehicle();
     }
     
 }

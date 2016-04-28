@@ -10,11 +10,11 @@ package rentnridevehicletracker.assessment2;
  * @author dewey
  */
 public class Vehicle {
-    static String manufacturer;
-    static String model;
-    static int make_Year;
-    static double kilometers;
-    static int services;
+    private String manufacturer;
+    private String model;
+    private int make_Year;
+    private double kilometers;
+    private int services;
     
     //setting up the default values
     Vehicle()
@@ -25,13 +25,57 @@ public class Vehicle {
     kilometers = 0.00;
     services = 0;
     }
-    //a copy constructor
-    Vehicle(Vehicle First)
+    //Setting values for things
+    public void setManufacturer (String Manu)
     {
-        manufacturer = Vehicle.manufacturer;
-        model = Vehicle.model;
-        make_Year = Vehicle.make_Year;
-        kilometers = Vehicle.kilometers;
-        services = Vehicle.services;
+        manufacturer = Manu;
     }
+    public void setModel (String Model)
+    {
+        model = Model;
+    }
+    public void setMakeYear (int MakeYr)
+    {
+        make_Year = MakeYr;
+    }
+    public void setKM (double setKM)
+    {
+        kilometers = setKM;
+    }
+    public void setServices (int Services)
+    {
+        services = Services;
+    }
+
+    //Getting those values back out
+    public String getManufacturer()
+    {
+        return manufacturer;
+    }
+    public String getModel()
+    {
+        return model;
+    }
+    public int getMake_Year()
+    {
+        return make_Year;
+    }
+    public double getKilometers()
+    {
+        return kilometers;
+    }
+    public int getService()
+    {
+        return services;
+    }
+      
+        
+    public void printVehicle()
+        {
+        System.out.println("Manufacturer: " + manufacturer);
+        System.out.println("Model: " + model);
+        System.out.println("Make Year: " + make_Year);
+        System.out.println("Kilometers: " + kilometers);
+        System.out.println("Number of Services: " + services);
+        }
 }
