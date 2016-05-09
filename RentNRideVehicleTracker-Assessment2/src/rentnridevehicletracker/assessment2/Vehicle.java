@@ -112,6 +112,7 @@ public class Vehicle {
         System.out.println("\n" + "This vehicle is tied to these journies: " + "\n");
         
         for (int counter_num = 0; counter_num < journiesArray.length; counter_num++)
+            if (journiesArray[counter_num].elementFilled == true)
             {
               System.out.println("    " + journiesArray[counter_num].toString());
             }

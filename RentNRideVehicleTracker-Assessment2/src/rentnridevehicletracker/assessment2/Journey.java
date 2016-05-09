@@ -11,6 +11,7 @@ package rentnridevehicletracker.assessment2;
  */
 public class Journey {
     
+    public boolean elementFilled;
     private String carUsed;
     private String startLocation;
     private String endLocation;
@@ -18,6 +19,11 @@ public class Journey {
     private double usedFuel;
     
     //the channel through which you can set your own values
+public void setElementFilled(boolean filled)
+{
+  elementFilled = filled;
+}
+    
 public void setCar (String Car)
 {
 	carUsed = Car;	
@@ -40,6 +46,11 @@ public void setUsedFuel (double UsedFuel)
 }
 
 //the channel through which you can retrieve your own values
+public boolean getElementFilled()
+{
+  return elementFilled;
+}
+
 public String getCar()
 {
 	return carUsed;
