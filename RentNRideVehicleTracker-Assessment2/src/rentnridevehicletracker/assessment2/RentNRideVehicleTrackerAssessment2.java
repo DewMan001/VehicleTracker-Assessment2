@@ -24,13 +24,25 @@ public class RentNRideVehicleTrackerAssessment2 {
         
         Journey journeyx = new Journey();
         
+        journeyx.setElementFilled(true);
         journeyx.setCar("Holden HQ");
         journeyx.setStartLocation("Tuscon, Arizona");
         journeyx.setEndLocation("Las Vegas, Nevada");
         journeyx.setTotalDistance(360);
         journeyx.setUsedFuel(48);
         
+        Journey journeyZ = new Journey();
+        
+        journeyZ.setElementFilled(false);
+        journeyZ.setCar("Mazda BallPit");
+        journeyZ.setStartLocation("Perth, Australia");
+        journeyZ.setEndLocation("Sydney, Australia");
+        journeyZ.setTotalDistance(3938.1);
+        journeyZ.setUsedFuel(48);
+        
         journey1[0] = journeyx;
+        
+        journey1[1] = journeyZ;
         
         journey1[0].printJourney();
         
@@ -47,7 +59,7 @@ public class RentNRideVehicleTrackerAssessment2 {
         Car1.setServices(2);
         Car1.setMakeYear(1987);
         Car1.setKM(0.05);
-        Car1.AddJourney(journey1[0]);
+        Car1.AddJourney(journey1[1]);
         
         //printing out the vehicle details
         Car1.printVehicle();
