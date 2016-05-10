@@ -2,6 +2,13 @@ public class Service
 {
    public void addService()
    {
-     
+     int currentServices;
+     currentServices = Car1.getServices();
+
+     int newTotal;
+     newTotal = currentServices + 1;
+
+     //setting the new figure as the vehicle's new number of services
+     Car1.setServices(newTotal);
    }
 }
