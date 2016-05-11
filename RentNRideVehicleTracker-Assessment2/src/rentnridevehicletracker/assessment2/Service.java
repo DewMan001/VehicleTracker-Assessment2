@@ -11,7 +11,7 @@ package rentnridevehicletracker.assessment2;
  */
 public class Service
 {
-   public int addService(int Services, int currentServices)
+   public int addService(int newTotal)
    {
      int currentServices;
      currentServices = Vehicle.getService();
@@ -20,7 +20,7 @@ public class Service
      newTotal = currentServices + 1;
 
      //setting the new figure as the vehicle's new number of services
-     Car1.setServices(newTotal);
+     Vehicle.setServices(newTotal);
    }
 
    //method to compare the number of services the car has
