@@ -30,18 +30,10 @@ public class RentNRideVehicleTrackerAssessment2 {
         journeyx.setTotalDistance(360);
         journeyx.setUsedFuel(48);
 
-        Journey journeyZ = new Journey();
-
-        journeyZ.setElementFilled(false);
-        journeyZ.setCar("Mazda BallPit");
-        journeyZ.setStartLocation("Perth, Australia");
-        journeyZ.setEndLocation("Sydney, Australia");
-        journeyZ.setTotalDistance(3938.1);
-        journeyZ.setUsedFuel(48);
+        
 
         journey1[0] = journeyx;
-
-        journey1[1] = journeyZ;
+       
 
         journey1[0].printJourney();
 
@@ -58,7 +50,7 @@ public class RentNRideVehicleTrackerAssessment2 {
         Car1.setMakeYear(1987);
         Car1.setKM(0.05);
         Car1.AddJourney(journey1[1]);
-        
+        Car1.printVehicle();
         
         //setting up a new kilometer rental
         dayRental JohnBeckham = new dayRental();
@@ -75,7 +67,7 @@ public class RentNRideVehicleTrackerAssessment2 {
         
         //printing out the vehicle details again to see
         //if it worked
-        Car1.printVehicle();
+        Car1.printVehicleString();
         
         
         

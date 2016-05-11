@@ -82,7 +82,7 @@ public double getUsedFuel()
         }
 
     @Override
-    public String toString()
+    public String printJourneyString()
     {
       String journeyString;
       journeyString = "";

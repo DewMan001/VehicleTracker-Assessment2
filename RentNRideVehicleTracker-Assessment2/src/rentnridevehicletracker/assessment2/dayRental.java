@@ -84,7 +84,6 @@ public class dayRental
         distanceNew = (distanceNew + distanceCurrent);
 
         rentalVehicle.setKM(distanceNew);
-        rentalVehicle.getKilometers();
     }
 
 

@@ -11,4 +11,35 @@ public class Service
      //setting the new figure as the vehicle's new number of services
      Car1.setServices(newTotal);
    }
+
+   //method to compare the number of services the car has
+   //and the number of services the car needs
+   public void checkServices()
+   {
+     int currentJournies;
+
+
+     int currentServices;
+     currentServices = Car1.getServices();
+
+     double currentDistance;
+     currentDistance = 0;
+     currentDistance = Car1.getDistance;
+
+     int servicesNeeded;
+     servicesNeeded = currentDistance / 100;
+
+     //checking if the vehicle has enough services
+     if (servicesNeeded > currentServices)
+     {
+       System.out.println("Vehicle needs to be serviced before we can process
+       +this request");
+
+       if (journies = journies + 1)
+       {
+         System.out.println("Vehicle needs to be serviced before we can process this request");
+       }
+
+     }
+   }
 }
