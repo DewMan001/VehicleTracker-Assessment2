@@ -1,0 +1,14 @@
+public class dayRental
+{
+  private double rentalLength; //length in days
+  private double rentalCost; //determined by length (in days) * 100 (default = 100)
+  private Vehicle rentalVehicle;
+  private double rentalDistance; //here for the distance total on the vehicle
+}
+
+public class kmRental
+{
+  private double rentalDistance; //length in kilometers
+  private double rentalCost; //determined by $1*length
+  private Vehicle rentalVehicle;
+}

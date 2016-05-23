@@ -1,0 +1,85 @@
+//setting up the fields for the dayRental class
+public class dayRental
+{
+  private double rentalLength; //length in days
+  private double rentalCost; //determined by length (in days) * 100 (default = 100)
+  private Vehicle rentalVehicle;
+  private double rentalDistance; //here for the distance total on the vehicle
+}
+
+//setting default values for the dayRental class
+dayRental()
+{
+  rentalLength = 0;
+  rentalCost = 100;
+  rentalVehicle = vehicle;
+  rentalDistance = 0
+}
+
+//setters for the dayRental class
+public void setRentalLength (double Length)
+{
+  rentalLength = Length;
+}
+
+public void calculateRentalCost (double duration, double rate, double cost)
+{
+  duration = rentalLength;
+  rate = 100;
+  cost = (duration * rate);
+  rentalCost = cost;
+}
+
+public void setRentalVehicle (Vehicle vehicle)
+{
+  rentalVehicle = vehicle;
+}
+
+public void setRentalDistance (double distance)
+{
+  rentalDistance = distance;
+}
+
+//getters for the dayRental class
+public double getRentalLength()
+{
+  return rentalLength;
+}
+
+public double getRentalCost()
+{
+  return rentalCost;
+}
+
+public Vehicle getRentalVehicle()
+{
+  return rentalVehicle;
+}
+
+public double getRentalDistance()
+{
+  return rentalDistance;
+}
+
+//print method for dayRental class
+public void printDayRental()
+{
+  System.out.println("Rental Length: " + rentalLength + " days");
+  System.out.println("Total Cost: $" + rentalCost);
+  System.out.println("Rented Vehicle: " + rentalVehicle);
+}
+
+//experiments with a class to add the kilometers of the journey
+//to the kilometers of the vehicle
+public void addDistance()
+{
+  double distanceNew;
+  distanceNew = 0;
+
+  double distanceCurrent;
+  distanceCurrent = rentalVehicle.getKilometers;
+
+  distanceNew = (distanceNew + dsitanceCurrent);
+
+  rentalVehicle.setKM(distanceNew);
+}

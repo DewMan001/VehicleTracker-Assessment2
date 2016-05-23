@@ -1,0 +1,15 @@
+//setting up a new kilometer rental
+kmRental JohnBeckham = new kmRental();
+
+//putting values into that new kilometer
+//based rental
+JohnBeckham.setRentalDistance(44.44);
+JohnBeckham.setRentalVehicle(Car1);
+
+//setting up a new perDay rental
+dayRental JeffGrangenburg = new dayRental();
+
+//putting values into that new perDay rental
+JeffGrangenburg.rentalLength(2.5);
+JeffGrangenburg.setRentalVehicle(Car1);
+JeffGrangenburg.setRentalDistance(876.24);

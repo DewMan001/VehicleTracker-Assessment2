@@ -17,6 +17,7 @@ public class Vehicle {
     private int make_Year;
     private double kilometers;
     private int services;
+    private int numOfJournies;
     
     
     private Journey[] journiesArray = new Journey[10];
@@ -40,20 +41,25 @@ public class Vehicle {
         make_Year = 0;
         kilometers = 0.00;
         services = 0; 
+        numOfJournies = 0;
+        
     }
     
-     public void AddJourney(Journey journey1)
+     public void AddJourney(Journey stanJourney)
    {
      for (int elementCounter = 0; elementCounter < journiesArray.length; elementCounter++)
      {
-       journiesArray[jArrayIndex] = journey1;
-       jArrayIndex++;       
+       journiesArray[jArrayIndex] = stanJourney;
+       jArrayIndex++;
+      
      }
 
      //if (jArrayIndex >= 10)
      //{
        //jArrayIndex = 0;
      //}
+     
+     numOfJournies = numOfJournies + 1;
    }
     
     //Setting values for things
@@ -77,6 +83,11 @@ public class Vehicle {
     {
         services = Services;
     }
+    
+    public void setNumOfJournies (int journies)
+    {
+        numOfJournies = journies;
+    }
 
     //Getting those values back out
     public String getManufacturer()
@@ -99,6 +110,11 @@ public class Vehicle {
     {
         return services;
     }
+    
+    public int getNumOfJournies()
+    {
+        return numOfJournies;
+    }
       
         
     public void printVehicle()
@@ -108,20 +124,25 @@ public class Vehicle {
         System.out.println("Make Year: " + make_Year);
         System.out.println("Kilometers: " + kilometers);
         System.out.println("Number of Services: " + services);
+        System.out.println("Number of Journies: " + numOfJournies);
         
-        System.out.println("\n" + "This vehicle is tied to these journies: " + "\n");
         
-        for (int counter_num = 0; counter_num < journiesArray.length; counter_num++)
-            if (journiesArray[counter_num].elementFilled == true)
-            {
-              System.out.println("    " + journiesArray[counter_num].toString());
-            }
-    }    
+    }
+
+//    public void printJourniesOfVehicle()
+//    {   
+//        System.out.println("\n" + "This vehicle is tied to these journies: " + "\n");
+//        
+//        for (int counter_num = 0; counter_num < journiesArray.length; counter_num++)
+//        {            
+//              System.out.println("    " + journiesArray[counter_num].printJourneyString());
+//            
+//        }
+//    }
     
     
     //toString method for the vehicle class
-    @Override
-    public String toString()
+    public String printVehicleString()
     {
         String vehicleString;
         
@@ -130,6 +151,7 @@ public class Vehicle {
         vehicleString += "Make Year: " + make_Year;
         vehicleString += "Kilometers: " + kilometers;
         vehicleString += "Number of Services: " + services;
+        vehicleString += "Number of journies: " + numOfJournies;
 
         return vehicleString;
     }
